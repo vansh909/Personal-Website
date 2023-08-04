@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        body {
+            background-color:rgb(26, 25, 25)
+        }
+
+        .navbar {
+            background-color: rgb(5, 5, 5);
+            border-radius: 10px;
+            position: absolute;
+            width: 1503px;
+            top: 0px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: red;
+        }
+
+        .image {
+            display: block;
+            position: relative;
+            background-size: cover;
+        }
+
+        .image_img {
+            display: block;
+            width: 1500px;
+            margin-top: 70px;
+        }
+
+        .image_overlay {
+            position: relative;
+            top: -200px;
+            left: 0;
+            width: 100%;
+            height: 10%;
+            background: rgba(57, 55, 55, 0.5);
+            color: white;
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .image:hover .image_overlay {
+            opacity: 1
+        }
+
+        .image_title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .intro {
+            color: red;
+            padding-left: 350px;
+            padding-bottom: 130px;
+        }
+
+        .ph {
+            padding-left: 600px;
+        }
+
+        .Desc {
+            color: red;
+            padding-left: 469px;
+        }
+
+        h2 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #pro1 {
+            height: 170px;
+            margin-left: 400px;
+            position: relative;
+            bottom: 80px;
+            left: 50px;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+
+        #pro2 {
+            height: 170px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-left: 240px;
+            position: relative;
+            bottom: 70px;
+            left: 50px;
+        }
+
+        #para1 {
+            color: wheat;
+            padding-left: 600px;
+            position: relative;
+            top: 100px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #para2 {
+            color: wheat;
+            padding-left: 600px;
+            position: relative;
+            top: 70px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #HeadPro1 {
+            color: brown;
+            padding-left: 600px;
+            position: relative;
+            top: 90px;
+        }
+
+        #HeadPro2 {
+            color: brown;
+            padding-left: 600px;
+            position: relative;
+            top: 60px;
+        }
+
+        .bar {
+            text-decoration: solid;
+        }
+
+        .gallery {
+            height: 300px;
+            width: 100%;
+            border: 2px solid black;
+        }
+
+        .gal {
+            width: 90%;
+            padding: 20px;
+            margin: 10px auto;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+        }
+        .GalPhoto {
+            width: 250px;
+            margin: 0 10px;
+            box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+            transition: 0.5s;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 30px;
+
+        }
+
+        .GalPhoto img {
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .GalPhoto:hover {
+            transform: scale(1.3);
+            z-index: 2;
+        }
+        .ph {
+            font-size: 20px;
+            padding-right: 700px;
+            color: rgb(217, 181, 21);
+        }
+
+        #MyIntro {
+            position: relative;
+            height: 190px;
+            margin-left: 600px;
+            border: 2px solid red; 
+            border-radius: 80px;
+        }
+
+        #myName {
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+        .line{
+            border-bottom: 5px solid grey;
+            margin-top: 2px;
+            width: 50%;
+            margin: auto;
+        }
+        .line1{
+            border-bottom: 5px solid grey;
+            margin-top: 2px;
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="image">
+        <img src="dd.jpeg" alt="Error" class="image_img">
+        <div class="image_overlay">
+            <div class="image_title">
+                Hey there! I am Vansh
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img src="myphotu.jpeg" id="MyIntro">
+    <h2 class="intro">I am a Full stack Web Developer based in Melbourne</h2>
+    <h2 class="Desc">Here what I have done so far</h2>
+    <div class="line"></div>
+    
+    <div class="proj1">
+        <h3 id="HeadPro1">Library Book Sorting</h3>
+        <p id="para1">The smart parking system implemented in the college campus utilizes RFID sensors for identification, IR sensors for slot detection, and DHT sensors for temperature management inside indoor parking slots. The system efficiently manages parking by differentiating between authentic users and normal users, providing them with designated parking slots. Real-time data from RFID and IR sensors allows for accurate information on slot availability to be displayed on screens, enhancing user experience. Additionally, the DHT sensor maintains optimal temperature inside indoor parking spaces and automatically activates exhaust fans when needed. The project aims to improve parking efficiency, user convenience, and space utilization, offering a scalable and future-ready solution for modern parking challenges.</p>
+        <img src="p1.jpeg" alt="proj1" id="pro1">
+    </div>
+
+    <div class="proj2">
+        <h3 id="HeadPro2">Smart Parking System</h3>
+        <p id="para2">The "Library Book Sorter" project is an autonomous robotic system designed to streamline the book sorting process in libraries. The robot is equipped with obstacle detection sensors, allowing it to navigate safely and efficiently through the library space. When the robot detects a book, it halts, and a robotic arm picks up the book. An ESP32 microcontroller scans the book's QR code, determining its designated shelf location. Utilizing this information, the robot car navigates to the correct shelf and, with the assistance of the robotic arm, places the book in its appropriate spot</p>
+        <img src="proj2.jpeg" id="pro2">
+    </div>
+
+    <div class="line1"></div>
+    <h2 class="ph">My Photos</h2>
+    <div class="gal">
+        <img src="Av1.jpeg" alt="gall1" class="GalPhoto">
+        <img src="Av2.jpeg" alt="gall2" class="GalPhoto">
+        <img src="Av3.jpeg" alt="gall3" class="GalPhoto">
+        <img src="Av4.jpeg" alt="gall4" class="GalPhoto">
+    </div>
+</body>
+</html>
